@@ -22,7 +22,7 @@ SPAM_BAN_DURATION = 3600  # مدت بن به ثانیه (1 ساعت)
 # مسیرهای ذخیره‌سازی
 BASE_DIR = os.getcwd()
 DATA_DIR = os.path.join(BASE_DIR, "bot_data")
-QUESTIONS_DIR = os.path.join(BASE_DIR, "Questions")
+QUESTIONS_DIR = BASE_DIR  # فایل‌ها در مسیر اصلی هستند
 
 os.makedirs(DATA_DIR, exist_ok=True)
 os.makedirs(QUESTIONS_DIR, exist_ok=True)
